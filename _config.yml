@@ -1,0 +1,8 @@
+# Welcome to Jekyll!
+
+name: Hank Quinlan, Horrible Cop
+# markdown: kramdown
+
+collections:
+  projects:
+    output: true
