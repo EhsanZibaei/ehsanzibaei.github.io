@@ -1,6 +1,7 @@
 ---
 layout: project
-title: "Automotive radar on a quadcopter"
+title: Automotive radar on a quadcopter
+permalink: /projects/uav_perception/
 ---
 
 My role as a software engineer in elektrobit GmbH

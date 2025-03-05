@@ -41,3 +41,32 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+
+
+.circle-photo {
+    width: 165px; /* Increased by 10% from 150px */
+    height: 165px; /* Increased by 10% from 150px */
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.horizontal-line {
+    border-top: 1px solid grey;
+    margin: 20px 0;
+}
+
+.blurb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-text {
+    font-size: 12px;
+    font-family: 'Georgia', serif; /* More stylish font */
+    width: 67%;
+    text-align: right;
+}

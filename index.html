@@ -1,21 +1,11 @@
 ---
 layout: default
-title: Hank Quinlan, Horrible Cop
+title: Welcome!
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Ehsan Zibaei!</h1>
-	<p>I am a software engineer specializing in robotics and AI, with a focus on control system design and automation. Originally from Iran, I have been living in Munich, Germany, since 2017.
-
-		This is my personal webpage, where you can find a summary of the projects I have worked on throughout my career. 
-	</p>
+<div class="intro">
+    <img src="/assets/ehsan_photo.png" alt="Ehsan Zibaei" class="circle-photo" >
+    <h1>Hi there, I'm Ehsan Zibaei!</h1>
+    <p class="intro-text">I am a software engineer specializing in robotics and AI, with a focus on control system design and automation. Originally from <a href="https://en.wikipedia.org/wiki/Tabriz">Tabriz</a>, Iran, I have been living and working in <a href="https://en.wikipedia.org/wiki/Munich">Munich</a>, Germany, since 2017.</p>
+    <p class="intro-text">This is my personal webpage, where you can find a summary of the <a href="/projects">projects</a> I have worked on throughout my career.</p>
 </div><!-- /.blurb -->
-
-<ul class="projects">
-	{% for project in site.projects %}
-		<li>
-			<h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
-			<p class="post-excerpt">{{  strip_html | truncatewords:50 }}</p>
-		</li>
-	{% endfor %}
-</ul>
 

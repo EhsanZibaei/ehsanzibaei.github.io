@@ -1,6 +1,8 @@
 ---
 layout: project
 title: Quadcopter assembling
+permalink: /projects/uav_safety/
+
 ---
 Assembling a quadcopter for the GNC lab
 

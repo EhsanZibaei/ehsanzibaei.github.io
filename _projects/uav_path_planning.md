@@ -1,6 +1,8 @@
 ---
 layout: project
 title: "Path planning for a swarm of UAVs"
+permalink: /projects/uav_path_planning/
+
 ---
 
 Idea: Having UAVs fly in a close proximity have many applications such as,

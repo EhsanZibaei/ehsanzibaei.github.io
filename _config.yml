@@ -1,8 +1,11 @@
 # Welcome to Jekyll!
 
-name: Hank Quinlan, Horrible Cop
+name: Ehsan Zibaei CV
 # markdown: kramdown
 
 collections:
   projects:
     output: true
+
+include:
+  - _pages
