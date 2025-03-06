@@ -13,16 +13,21 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
-    color: #999;
+    color: #007bff; /* Classic blue color, easily recognizable as a link */
+    text-decoration: none; /* Removes underline for a cleaner look */
 }
+
 a:hover {
-    text-decoration: underline;
+    color: #0056b3; /* Slightly darker shade on hover for better interactivity */
+    text-decoration: underline; /* Adds underline on hover for clear interactivity */
 }
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Popins', serif;
+    font-size: 2.5em;
 }
+
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
@@ -42,15 +47,17 @@ ul.posts li {
     list-style: none;
 }
 
-
-
 .circle-photo {
-    width: 165px; /* Increased by 10% from 150px */
-    height: 165px; /* Increased by 10% from 150px */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    vertical-align: middle;
     float: left;
     margin-right: 20px;
+    margin-bottom: 50px;
+    border: 10;
+
 }
 
 .horizontal-line {
@@ -65,8 +72,144 @@ ul.posts li {
 }
 
 .intro-text {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Georgia', serif; /* More stylish font */
     width: 67%;
     text-align: right;
+}
+
+
+
+/* Container for form styling */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #333;
+}
+
+/* Inputs & Textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Textarea specific */
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Button styling */
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+
+figure {
+    max-width: 800px; /* Maximum width */
+    width: 100%;      /* Responsive width */
+    margin: 1em auto; /* Center alignment */
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%; /* Image never exceeds the width of figure */
+    height: auto;    /* Maintain aspect ratio */
+  }
+  
+  figcaption {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 0.5em;
+  }
+  
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Space between squares */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: flex-start; /* Align text to the top */
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: grey;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    /* letter-spacing: 2px; */
+    /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Background images for each project */
+.safety-net {
+    background-image: url('/assets/images/uav_safety.png');
+}
+.path-planning {
+    background-image: url('/assets/images/uav_path_planning.png');
+}
+.crash-diagnosis {
+    background-image: url('/assets/images/uav_diagnosis.jpg');
+}
+.altitude-estimation {
+    background-image: url('/assets/images/robotic_arm.webp');
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+        grid-template-rows: auto;
+    }
 }
