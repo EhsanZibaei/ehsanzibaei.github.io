@@ -4,7 +4,7 @@ title: "Path Planning for a Swarm of UAVs"
 permalink: /projects/uav_path_planning/
 ---
 
-# Optimal Path Planning for Multiple UAVs
+# Path Planning for Multiple UAVs
 
 When quadrotors fly in formation, their capabilities improve significantly, allowing them to cover large areas more efficiently. This enhances their effectiveness in missions such as locating survivors in disasters (earthquakes, floods, and fires).
 
@@ -35,7 +35,8 @@ Once the optimization problem is formulated, any optimization solver can be used
     <figcaption><em>Fig. 3 - Resulting formation flight of quadrotors.</em></figcaption>
 </figure>
 
-For more details, refer to this <a href="https://jast.ias.ir/article_114003_2b16e4be50bc0cecc7a755949715d457.pdf">paper</a> and the following simulation video that I created in MATLAB/Simulink.
+To explore this further, check out [this paper](https://jast.ias.ir/article_114003_2b16e4be50bc0cecc7a755949715d457.pdf) and the simulation video I created in MATLAB/Simulink.
+
 
 <div style="text-align: center;">
     <video width="800" height="450" autoplay muted controls>
