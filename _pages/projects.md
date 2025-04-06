@@ -26,14 +26,14 @@ permalink: /projects/
 </div>
 
 <p>
-  From 2023 to 2024, I worked as a Control Systems Engineer at <a href="https://www.elektrobit.com/">Elektrobit Automotive GmbH</a>, where I developed positioning algorithms for quadrotors by fusing radar point cloud and IMU data. This work contributed to improving the accuracy and robustness of autonomous navigation systems.
+  From 2023 to 2024, I worked as a Control Systems Engineer at <a href="https://www.elektrobit.com/">Elektrobit Automotive GmbH</a> (a subsidiary of Continental AG), where I developed positioning algorithms for quadrotors by fusing radar point cloud and IMU data. This work contributed to improving the accuracy and robustness of autonomous navigation systems.
 </p>
 <p>
-  In 2024, I initiated a personal project aimed at improving task and path planning for robotic arms using emerging VLMs and LLMs. This is an ongoing project, and I will publish a summary soon.
+  In 2024, I initiated a personal project aimed at automating common industrial tasks such as unscrewing a screw using a robotic arm. You can see a demo of this project in the following page; 
 </p>
 
 <div class="projects-container">
-    <a href="/projects/llm_robotic/" class="project-card altitude-estimation">
-        LLM-driven Robotic Planning (Work in Progress) (2024 - )
+    <a href="/projects/automation_robotic/" class="project-card altitude-estimation">
+        Unscrewing screws using a robotic arm (Work in Progress) (2024 - )
     </a>
 </div>
