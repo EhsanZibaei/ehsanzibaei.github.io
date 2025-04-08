@@ -8,7 +8,7 @@ permalink: /projects/
 <section class="project-period">
   <h2>2013 – 2016: Guidance, Control, and Navigation Lab</h2>
   <p>
-    I worked part-time as a student assistant, setting up robotic experiments and researching path-planning algorithms for quadrotors.
+    I worked part-time as a Research Assistant, setting up robotic experiments and developing path-planning algorithms for quadrotors.
   </p>
   <div class="projects-container">
     <a href="/projects/uav_safety/" class="project-card safety-net">
