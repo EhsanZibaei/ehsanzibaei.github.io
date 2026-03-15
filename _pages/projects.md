@@ -41,13 +41,19 @@ permalink: /projects/
 </section>
 
 <section class="project-period">
-  <h2>2024 – Present: Personal Projects and Training in Robotics</h2>
+  <h2>2025 – Present: Freelance Projects</h2>
   <p>
-    Experimenting with ROS2 for automating industrial tasks using a robotic arm. The first prototype performs unscrewing operations autonomously.
-  </p>
+   - Designed and configured real-time sensor-fusion pipelines by integrating IMU, camera, and LiDAR drivers with precise timing and data formats, enabling accurate 3D mapping for robotics and autonomous systems
+   </P>
+<p>
+- Built a complete simulation stack for quadrotor UAVs using ArduPilot SITL, ROS 2 (DDS), Gazebo Harmonic, and YOLOv8 object detection
+</p>
+<p>
+- Engineered a full-stack SaaS platform for personalised language learning, powered by locally deployed Large Language Models (LLMs) with full privacy control
+ </p>
   <div class="projects-container">
     <a href="/projects/automation_robotic/" class="project-card altitude-estimation">
-      Unscrewing Using a Robotic Arm (2024–Present)
+      Autonomous UAV Simulation Project
     </a>
   </div>
 </section>
