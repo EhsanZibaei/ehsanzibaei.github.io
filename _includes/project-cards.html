@@ -1,0 +1,17 @@
+{% assign projects = site.projects | where: "listing_period", include.period | sort: "listing_order" %}
+<div class="projects-container">
+  {% for project in projects %}
+    <a class="project-card" href="{{ project.url | relative_url }}">
+      <img class="project-card-image"
+           src="{{ project.listing_image | relative_url }}"
+           alt=""
+           loading="lazy">
+      <div class="project-card-content">
+        <span class="project-card-category">{{ project.listing_category }}</span>
+        <h3>{{ project.listing_title }}</h3>
+        <p>{{ project.listing_summary }}</p>
+        <span class="project-card-link">View project <span aria-hidden="true">&rarr;</span></span>
+      </div>
+    </a>
+  {% endfor %}
+</div>

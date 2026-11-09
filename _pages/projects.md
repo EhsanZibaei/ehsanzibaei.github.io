@@ -3,57 +3,31 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-# My Robotic Projects
 
-<section class="project-period">
-  <h2>2013 – 2016: Guidance, Control, and Navigation Lab</h2>
-  <p>
-    I worked part-time as a Research Assistant, setting up robotic experiments and developing path-planning algorithms for quadrotors.
-  </p>
-  <div class="projects-container">
-    <a href="/projects/uav_safety/" class="project-card safety-net">
-      Safety Measures for Testing Quadrotors (2013–2015)
-    </a>
-    <a href="/projects/uav_path_planning/" class="project-card path-planning">
-      Path Planning for Multiple UAVs (2014–2016)
-    </a>
-  </div>
-</section>
+<div class="projects-page">
+  <header class="projects-intro">
+    <p class="projects-eyebrow">Selected work</p>
+    <h1>Projects &amp; experience</h1>
+    <p>A selection of research and engineering work across robotics, autonomous systems, and applied AI.</p>
+  </header>
 
-<section class="project-period">
-  <h2>2017 – 2023: Technical University of Munich</h2>
-  <p>
-    As a full-time researcher at the 
-    <a href="https://www.cs.cit.tum.de/en/sse/homepage/" target="_blank">Chair of Software and Systems Engineering</a>, I developed AI-driven tools for diagnosing quadrotor failures and enhancing system reliability.
-  </p>
-  <div class="projects-container">
-    <a href="/projects/uav_diagnosis/" class="project-card crash-diagnosis">
-      Root Cause of Quadrotor Failures (2017–2023)
-    </a>
-  </div>
-</section>
-
-<section class="project-period">
-  <h2>2023 – 2024: Elektrobit Automotive GmbH</h2>
-  <p>
-    Worked on positioning algorithms that fuse radar point cloud and IMU data to improve autonomous quadrotor navigation.
-  </p>
-</section>
-
-<section class="project-period">
-  <h2>2025 – Present: Freelance Projects</h2>
-  <p>
-   - Designed and configured real-time sensor-fusion pipelines by integrating IMU, camera, and LiDAR drivers with precise timing and data formats, enabling accurate 3D mapping for robotics and autonomous systems
-   </P>
-<p>
-- Built a complete simulation stack for quadrotor UAVs using ArduPilot SITL, ROS 2 (DDS), Gazebo Harmonic, and YOLOv8 object detection
-</p>
-<p>
-- Engineered a full-stack SaaS platform for personalised language learning, powered by locally deployed Large Language Models (LLMs) with full privacy control
- </p>
-  <div class="projects-container">
-    <a href="/projects/automation_robotic/" class="project-card altitude-estimation">
-      Autonomous UAV Simulation Project
-    </a>
-  </div>
-</section>
+  {% for career in site.data.career %}
+    {% assign career_projects = site.projects | where: "listing_period", career.project_period %}
+    <section class="project-period">
+      <h2>{{ career.heading }}</h2>
+      {% if career.description %}
+        <p class="project-period-description">{{ career.description }}</p>
+      {% endif %}
+      {% if career.highlights %}
+        <ul class="career-highlights">
+          {% for highlight in career.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if career_projects.size > 0 %}
+        {% include project-cards.html period=career.project_period %}
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>

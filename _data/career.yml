@@ -1,0 +1,17 @@
+- heading: "2013 – 2016: Guidance, Control, and Navigation Lab"
+  description: "I worked part-time as a Research Assistant, setting up robotic experiments and developing path-planning algorithms for quadrotors."
+  project_period: early-career
+
+- heading: "2017 – 2023: Technical University of Munich"
+  description: 'As a full-time researcher at the <a href="https://www.cs.cit.tum.de/en/sse/homepage/" target="_blank">Chair of Software and Systems Engineering</a>, I developed AI-driven tools for diagnosing quadrotor failures and enhancing system reliability.'
+  project_period: research
+
+- heading: "2023 – 2024: Elektrobit Automotive GmbH"
+  description: "Worked on positioning algorithms that fuse radar point cloud and IMU data to improve autonomous quadrotor navigation."
+
+- heading: "2025 – Present: Freelance Projects"
+  highlights:
+    - "Designed and configured real-time sensor-fusion pipelines integrating IMU, camera, and LiDAR drivers with precise timing and data formats, enabling accurate 3D mapping for robotics and autonomous systems."
+    - "Built a complete simulation stack for quadrotor UAVs using ArduPilot SITL, ROS 2 (DDS), Gazebo Harmonic, and YOLOv8 object detection."
+    - "Engineered a full-stack SaaS platform for personalised language learning, powered by locally deployed Large Language Models (LLMs) with full privacy control."
+  project_period: freelance

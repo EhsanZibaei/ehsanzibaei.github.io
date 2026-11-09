@@ -2,6 +2,12 @@
 layout: project
 title: "Diagnosing the Root Cause of ArduPilot Quadcopter Crashes"
 permalink: /projects/uav_diagnosis/
+listing_title: Root Cause of Quadrotor Failures (2017–2023)
+listing_image: /assets/images/uav_diagnosis.jpg
+listing_category: Research & reliability
+listing_summary: "Methods for tracing quadrotor failures to their root causes using causal models and actual causality analysis."
+listing_period: research
+listing_order: 3
 ---
 
 # Root Cause of Quadrotor Failures
@@ -10,10 +16,8 @@ Imagine you are a professional photographer, and your beloved quadcopter, which 
 
 First, you need to find the root cause. But all you know is that, in the middle of the flight, it suddenly stopped responding and fell to the ground. When you look at the altitude measurements you would see something like this:
 
-<figure style="text-align: center; overflow: hidden; height: calc(100% - 6cm);">
-    <img src="/assets/images/altitude_drop.png" 
-         alt="altitude of quadrotor"
-         style="width:800px;">
+<figure>
+    <img src="/assets/images/altitude_drop.png" alt="Altitude of a quadrotor during a flight that ended in a crash">
     <figcaption><em>Fig. 1 - Altitude of a quadrotor during a flight that ended in a crash.</em></figcaption>
 </figure>
 
@@ -26,19 +30,15 @@ In [this](https://www.frontiersin.org/articles/10.3389/frobt.2024.1123762/full) 
 
 First, you need to create a causal graph, something like this:
 
-<figure style="text-align: center; overflow: hidden; height: calc(100% - 6cm);">
-    <img src="/assets/images/causal_graph.png" 
-         alt="Causal graph of quadrotors"
-         style="width:500px;">
+<figure>
+    <img src="/assets/images/causal_graph.png" alt="Causal graph of quadrotor components">
     <figcaption><em>Fig. 2 - Causal Graph for quadrotors.</em></figcaption>
 </figure>
 
 Then, you need to use actual causality analysis to automatically check all scenarios where specific faults occurred or not. The Halpern-Pearl algorithm will handle this for you, identifying which leaf node is responsible for the root node failure. In the below example, the Extended Kalman Filter caused the quadrotor to crash.
 
-<figure style="text-align: center; overflow: hidden; height: calc(100% - 6cm);">
-    <img src="/assets/images/causal_graph_colored.jpg" 
-         alt="Root cause analysis using the causal graph"
-         style="width:700px;">
+<figure>
+    <img src="/assets/images/causal_graph_colored.jpg" alt="Causal graph highlighting the identified root cause">
     <figcaption><em>Fig. 3 - Root cause analysis on the causal graph.</em></figcaption>
 </figure>
 
